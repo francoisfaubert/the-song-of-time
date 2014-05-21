@@ -1,0 +1,33 @@
+ body {
+    background:#000;
+    padding:0;
+    color:#fff;
+    font-family: Oxygen, Arial;
+    font-size:4em; 
+}
+
+.clock {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    font-size:100%;
+    color:#fff;
+    text-align: right;  
+    line-height: 1.2;
+}
+
+.month {
+    font-size:95%;
+    opacity:.8;
+    text-transform: uppercase;
+}
+
+.day {
+    font-size:85%;
+    opacity:.6;
+}
+
+.time {
+    font-size:110%;
+    opacity:.9;
+}
