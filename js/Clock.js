@@ -1,10 +1,10 @@
-(function(){
+(function(window, document, undefined){
     var Clock = window.Clock = function() {
         this.dom = {
-            "time" : document.querySelector(".clock .time"),
-            "day" : document.querySelector(".clock .day"),
+            "time"  : document.querySelector(".clock .time"),
+            "day"   : document.querySelector(".clock .day"),
             "month" : document.querySelector(".clock .month"),
-            "year" : document.querySelector(".clock .year")
+            "year"  : document.querySelector(".clock .year")
         };
     };
 
@@ -19,8 +19,8 @@
                 fmt = this.formatNumber,
                 scope = this;
 
-            this.dom.time.innerHTML = date.getHours() + ":" + fmt(date.getMinutes()) + "." + fmt(date.getSeconds());
+            this.dom.time.innerHTML = date.getHours() + ":" + fmt(date.getMinutes()) + ":" + fmt(date.getSeconds());
             setTimeout(function(){ scope.tick(); }, 500); // give it time to resync
         }
     };
-})();
+})(window, document);

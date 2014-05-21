@@ -1,33 +1,59 @@
  body {
-    background:#000;
+    background:#ddd;
     padding:0;
     color:#fff;
     font-family: Oxygen, Arial;
     font-size:4em; 
 }
 
+
+
 .clock {
+    background:rgba(0,0,0,.8);
     position:absolute;
-    bottom:10px;
-    right:10px;
+    top:50%;
+    left:50%;    
+    margin:-200px 0 0 -200px ; 
+    width:400px;
     font-size:100%;
     color:#fff;
-    text-align: right;  
     line-height: 1.2;
+    text-align: center;
+    border-radius:.08em;
+    box-shadow: 0 0 15px rgba(0,0,0,.5)
 }
 
-.month {
+.clock div {    
+    line-height:80px;
+    vertical-align: middle;
+    margin: 0.25em 0.5em;
+}
+
+.clock .month {
     font-size:95%;
     opacity:.8;
     text-transform: uppercase;
+    border-top:1px solid rgba(255,255,255,.7);
+    margin: 0.3em 0.5em 0;
 }
 
-.day {
+.clock .year {    
+    margin: 0 0 0 0.3em;
+}
+
+
+.clock .day {
     font-size:85%;
     opacity:.6;
+    border-top:1px solid #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    padding-top:.2em;
 }
 
-.time {
+.clock .time {
     font-size:110%;
     opacity:.9;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
 }

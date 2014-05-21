@@ -13,6 +13,7 @@
         <link rel="shortcut icon" href="../assets/ico/favicon.ico">
         <link href='/css/styles.css' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
     </head>
     <body>
     <?php
@@ -71,10 +72,10 @@
         <?php endforeach; ?>
 
         <section class="clock">
-            <div class="time"><?php echo date("g"); ?>:<?php echo date("i"); ?>.<?php echo date("s"); ?> <em></em></div>
-            <div class="day"><?php echo date("l"); ?> <em></em></div>
+            <div class="time"><em></em></div>
             <div class="month"><?php echo date("F"); ?> <em></em></div>
             <div class="year"><?php echo date("Y"); ?> <em></em></div>
+            <div class="day"><?php echo date("l"); ?> <em></em></div>            
         </section>
         <button id="toggle">Play / Stop</button>
 

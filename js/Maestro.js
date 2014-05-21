@@ -1,4 +1,4 @@
-(function(){
+(function(window, document, undefined){
 
                 //C–E–F–G–B–C
                 //http://en.wikipedia.org/wiki/Pentatonic_scale
@@ -85,4 +85,4 @@
             (!this.playing) ? this.start() : this.stop();
         }
     }
-})();
+})(window, document);
