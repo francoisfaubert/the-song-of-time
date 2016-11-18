@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Song of Time: uses the current time to generate a song.">        
+        <meta name="author" content="Francois Faubert">
+
+        <title>The Song of Time</title>
+
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <link href='/assets/css/styles.css' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+
+        <audio class="violin b" type="audio/mpeg" src="/assets/mp3s/violin_B3_long_forte_molto-vibrato.mp3"></audio>
+        <audio class="violin f" type="audio/mpeg" src="/assets/mp3s/violin_F4_long_forte_molto-vibrato.mp3"></audio>
+        <audio class="violin g" type="audio/mpeg" src="/assets/mp3s/violin_G3_long_forte_molto-vibrato.mp3"></audio>
+
+        <audio class="mandolin g" type="audio/mpeg" src="/assets/mp3s/mandolin_G3_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin b" type="audio/mpeg" src="/assets/mp3s/mandolin_B3_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin e" type="audio/mpeg" src="/assets/mp3s/mandolin_E4_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin g" type="audio/mpeg" src="/assets/mp3s/mandolin_G4_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin b" type="audio/mpeg" src="/assets/mp3s/mandolin_B4_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin e" type="audio/mpeg" src="/assets/mp3s/mandolin_E5_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin b" type="audio/mpeg" src="/assets/mp3s/mandolin_B5_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin g" type="audio/mpeg" src="/assets/mp3s/mandolin_G5_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin e" type="audio/mpeg" src="/assets/mp3s/mandolin_E6_very-long_piano_normal.mp3"></audio>
+        <audio class="mandolin g" type="audio/mpeg" src="/assets/mp3s/mandolin_G6_very-long_piano_normal.mp3"></audio>
+
+        <!--<audio class="mandolin c" type="audio/mpeg" src="/assets/mp3s/mandolin_C4_very-long_piano_normal.mp3"></audio>-->
+        <!--<audio class="mandolin f" type="audio/mpeg" src="/assets/mp3s/mandolin_F4_very-long_piano_normal.mp3"></audio>-->
+        <!--<audio class="mandolin c" type="audio/mpeg" src="/assets/mp3s/mandolin_C5_very-long_piano_normal.mp3"></audio>-->
+        <!--<audio class="mandolin f" type="audio/mpeg" src="/assets/mp3s/mandolin_F5_very-long_piano_normal.mp3"></audio>-->
+        <!--<audio class="mandolin c" type="audio/mpeg" src="/assets/mp3s/mandolin_C5_very-long_piano_normal.mp3"></audio>-->
+        <!--<audio class="mandolin f" type="audio/mpeg" src="/assets/mp3s/mandolin_F6_very-long_piano_normal.mp3"></audio>-->
+        
+        <audio class="guitar e" type="audio/mpeg" src="/assets/mp3s/guitar_E2_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar f" type="audio/mpeg" src="/assets/mp3s/guitar_F2_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar g" type="audio/mpeg" src="/assets/mp3s/guitar_G2_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar b" type="audio/mpeg" src="/assets/mp3s/guitar_B2_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar c" type="audio/mpeg" src="/assets/mp3s/guitar_C3_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar e" type="audio/mpeg" src="/assets/mp3s/guitar_E3_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar f" type="audio/mpeg" src="/assets/mp3s/guitar_F3_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar g" type="audio/mpeg" src="/assets/mp3s/guitar_G3_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar b" type="audio/mpeg" src="/assets/mp3s/guitar_B3_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar c" type="audio/mpeg" src="/assets/mp3s/guitar_C4_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar e" type="audio/mpeg" src="/assets/mp3s/guitar_E4_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar f" type="audio/mpeg" src="/assets/mp3s/guitar_F4_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar g" type="audio/mpeg" src="/assets/mp3s/guitar_G4_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar b" type="audio/mpeg" src="/assets/mp3s/guitar_B4_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar e" type="audio/mpeg" src="/assets/mp3s/guitar_E5_very-long_forte_normal.mp3"></audio>
+        <audio class="guitar g" type="audio/mpeg" src="/assets/mp3s/guitar_G5_very-long_forte_normal.mp3"></audio>
+
+        <!--<audio class="guitar" type="audio/mpeg" src="/assets/mp3s/guitar_C5_very-long_forte_normal.mp3"></audio>-->
+        <!--<audio class="guitar" type="audio/mpeg" src="/assets/mp3s/guitar_F5_very-long_forte_normal.mp3"></audio>-->
+
+        <section id="clock">
+            <div class="seconds"><span></span></div>    
+            <div class="minutes"><span></span></div>    
+            <div class="hour"><span></span></div>   
+            <div class="date"><span></span></div>   
+            <div class="month"><span></span></div>
+            <div class="year"><span></span></div>
+        </section>
+
+        <button id="toggle">Play / Stop</button>
+
+        <script src="/assets/js/vendor/moment.min.js"></script>
+
+        <script src="/assets/js/Maestro.js"></script>
+        <script src="/assets/js/Clock.js"></script>
+        <script src="/assets/js/Guitar.js"></script>
+        <script src="/assets/js/Mandolin.js"></script>
+        <script src="/assets/js/Violin.js"></script>
+        <script>
+            var clock = new Clock();
+            clock.tick();
+
+            var maestro = new Maestro(clock, [
+                new Guitar(clock), 
+                new Mandolin(clock),
+                // new Violin(clock)
+            ]);
+
+            clock.on("tick", maestro.compose.bind(maestro));
+
+            maestro.toggle();
+
+            document.getElementById("toggle").addEventListener("click", function() {
+                maestro.toggle();                
+            });
+
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-146052-10']);
+            _gaq.push(['_trackPageview']);
+            /*(function() {
+                var ga = document.createElement('script'); ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();*/
+        </script>
+    </body>
+</html>
